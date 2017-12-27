@@ -1,0 +1,415 @@
+/* Reset styli domyślnych */
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* Style ogólne dla strony */
+body
+{
+	background-color: #031526;
+	clear:both;
+	clear:both;
+}
+
+main
+{
+	min-height: 100px;
+}
+
+.container
+{
+	width:100%;
+	margin:0 auto;
+}
+
+/* Nagłówek strony */
+.session
+{
+	width:100%;
+	min-height:10px;
+	background-color: #1F3349;
+	padding:10px 0 5px 0;
+	text-align: center;
+}
+
+@media (min-width: 600px) 
+{
+	.session
+	{
+		display: flex;
+	}
+	
+}
+
+.session a
+{
+	text-decoration: none;
+	color:#FFF;
+	line-height: 10px;
+	flex:1;
+}
+
+.session p
+{
+	color:#FFF;
+	flex: 1;
+}
+
+.listStyle
+{
+	width:100%;
+	min-height:15px;
+	background-color: #1F3349;
+	padding:10px 0 5px 0;
+}
+
+.listStyle li
+{
+	display: block;
+	margin:0px auto 5px auto;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 7px;
+}
+
+@media (min-width: 600px) 
+{
+	.topMenu ol
+	{
+		display: flex;
+	}
+	.topMenu a
+	{
+	 flex:1;
+	}
+}
+
+.topMenu li
+{
+	width:90%;
+}
+
+.listStyle li:hover
+{
+	background-color: #2B4364
+}
+
+.listStyle a
+{
+	color: #FFF;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.logo
+{
+	width:100%;
+	min-height:100px;
+}
+
+.logo h1
+{
+	text-align: center;
+	font-size: 3rem;
+}
+
+.logo h2
+{
+	text-align: center;
+	font-size: 2rem;
+	color: #76D1FE;
+}
+
+@media (orientation: landscape )
+{
+	.logo
+	{
+		height:100px;
+	}
+	.logo h1
+	{
+		font-size: 3.4rem;
+	}
+	.logo h2
+	{
+		font-size: 1.5rem;
+		margin-left:-30%;
+	}
+}
+
+.logo a
+{
+	font-family: 'Risque', cursive;
+	color:#C1DB4D;
+	text-decoration: none;	
+}
+
+/* Elementy blokowe strony */
+
+
+.block
+{
+	border:1px #3C4D5E solid;
+	margin:15px;
+	background-color: #1F3349;
+	padding: 15px;
+	text-align: justify;
+	color:white;
+}
+
+@media (min-width: 600px) 
+{ 
+	.mainContent
+	{
+		display: flex;
+	}
+	.topBlock
+	{
+		margin-bottom:0;
+	}
+	.left
+	{
+		margin-right: 0px;
+	}
+	.leftColumn
+	{
+		flex:1;
+	}
+	.rightColumn
+	{
+		flex:4;
+	}
+
+	.loginColumn
+	{
+		margin-left:0;
+		flex:1;
+	}
+	.block.right
+	{
+		margin-left:0;
+		flex:1;
+	}
+}
+
+.formRow
+{
+	flex:1;
+	width:100%;
+}
+
+.block h3
+{
+	color:white;
+	padding: 0 0 10px 0
+	line-height:30px;
+}
+
+.block ol
+{
+	list-style: square inside url("../images/list.bmp");
+}
+
+.block ol a
+{
+	color:#2EA3F1;
+	text-decoration: none;
+}
+
+.block ol a:hover
+{
+	text-decoration: underline;
+	color:#C1DB4B;
+}
+
+/* Style dla bloku wyszukiwania */
+.block select
+{
+	width:100%;
+	margin-bottom: 10px;
+}
+
+/* Style dla ogłoszenia */
+.adsBlock 
+{
+	margin:15px;
+	padding: 15px;
+	text-align: justify;
+	color:white;
+	clear: both;
+}
+
+.adsBlock.buy
+{
+	background-color:#2BA9B9;
+}
+
+.adsBlock.sell
+{
+	background-color: #80A305;
+}
+
+.adsBlock.exchange
+{
+	background-color: #FC6002;
+}
+
+/* Style przycisków */
+.more
+{
+	border: none;
+	padding: 7px;
+	border-radius: 7px;
+	margin-top: 10px;
+	color:#FFF;
+}
+
+.more.Buy
+{
+	background-color: #1F7C8C;
+}
+
+.more.Buy:hover
+{
+	background-color: #58B6C9;
+}
+
+.more.Sell
+{
+	background-color:#5A780E;
+}
+
+.more.Sell:hover
+{
+	background-color:#93B24B;
+}
+
+.more.Exchange
+{
+	background-color:#B1490C;
+}
+
+.more.Exchange:hover
+{
+	background-color:#EA8349;
+}
+
+.more.button
+{
+	background-color: #172A3E;
+	border:1px #203A58 solid;
+}
+
+.more.button:hover
+{
+	background-color: #50647B;
+}
+
+/* Style dla stopki */
+footer
+{
+	width:100%;
+	min-height: 70px;
+	background-color: #1F3349;
+}
+
+footer ol
+{
+	margin: 0 auto;
+	width: 100%;
+}
+
+@media (min-width: 600px) 
+{
+	.allRights
+	{
+		width:550px;
+		margin: 0 auto;
+	}	
+	footer ol
+	{
+		display: flex;
+	}
+
+	footer ol a
+	{
+		flex:1;
+	}
+
+	.biger
+	{
+		flex:2;
+	}
+}
+
+footer ol li
+{
+	/*width:100%;*/
+	list-style-type: none;
+	text-align: center;
+}
+
+footer ol a
+{
+	color:	#5A91D1;
+	text-decoration: none;
+}
+
+footer ol a:hover
+{
+	text-decoration: underline;
+	color:#A0C1E2;
+}
+
+.copy
+{
+	width:100%;
+	text-align: center;
+	color:#B8BBC4;
+	padding:5px 0;
+}
+
+.who
+{
+	width:100%;
+	text-align: center;
+	color:#E7F1F0;
+	padding: 5px 0;
+}
+/* Formularze */
+
+.block input
+{
+	width:100%;
+}
+
+/* Etykiety */
+.redLabel
+{
+	margin:7px 0;
+	background-color: #c92d2d;
+	padding:5px;
+	border-radius: 7px;
+	border:1px #e31414 solid;
+}
+
+.greenLabel
+{
+	
+	margin:7px 0;
+	background-color: #3bc372;
+	padding:5px;
+	border-radius: 7px;
+	border:1px #00ff00 solid;
+	text-align: left;
+}
+
+/* Obramowanie informacyjne */
+.greenBorder
+{
+	outline:5px #3bc372 solid;
+	display:none;
+}
